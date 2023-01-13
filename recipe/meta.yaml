@@ -1,5 +1,5 @@
 {% set name = "ussa1976" %}
-{% set version = "0.3.2" %}
+{% set version = "0.3.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ussa1976-{{ version }}.tar.gz
-  sha256: 5ad41ca724a9d5fc13e3bf4c55ad503e43cdeceaa9e0d6cf728ef1db87a8b049
+  sha256: 9ef7ea4c6991c8a3c176396ab6ce01a4211e8d6e91bbe97810986dc87c1920fa
 
 build:
   entry_points:
