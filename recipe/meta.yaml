@@ -1,5 +1,5 @@
 {% set name = "ussa1976" %}
-{% set version = "0.3.3" %}
+{% set version = "0.3.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ussa1976-{{ version }}.tar.gz
-  sha256: 9ef7ea4c6991c8a3c176396ab6ce01a4211e8d6e91bbe97810986dc87c1920fa
+  sha256: 28eec80a65db5ab84ec79ea1732352bbb137408260f940374fa313c7440faa37
 
 build:
   entry_points:
@@ -21,13 +21,13 @@ requirements:
     - poetry
   host:
     - pip
-    - python >=3.6,<3.10
+    - python >=3.8,<4.0
     - poetry
   run:
     - click >=7.0
     - netcdf4 >=1.5.7
     - numpy >=1.22
-    - python >=3.6,<3.10
+    - python >=3.8,<4.0
     - scipy >=1.6.3
     - xarray >=0.18.2
 
